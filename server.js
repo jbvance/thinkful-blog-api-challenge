@@ -5,6 +5,12 @@ const {BlogPosts} = require('./models');
 
 app.use('/blog-posts', blogPostsRouter);
 
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+});
+
 // create some posts
 BlogPosts.create('Javascript fundamentals', 'Javascript Fundamentals blog post content here', 'Jason Vance', Date.now());
 BlogPosts.create('New Blog Post', 'new blog post content here', 'John Doe', Date.now());
