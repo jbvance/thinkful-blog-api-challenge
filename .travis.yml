@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: "L0uEerJL4jHdJq/wvdBSC+Fm4h4n2X94+K0jfyjg/cBBDOG56sBpzxAnpP4Csmm9Rvp4Xu5i9x6FsqLsf0AWbVIF79ZfO3mSd68cYTjB/DClSiNRYHKonZ8kAWsAPT9SxWZOP1L38zTPBTRfZRSO9qvz7H56+UGLrG62aqpyVOO3jIZu5h94PIlXa7H5GVTH9tUPAcQ1qQHXwTln0SWpL8b/dbTWzQLF7K4K4f0/NrxKZHIQXZvt13xZuDA4pEkQ2AjzLIaYc/GdLR8wGGlvlMo9M9JzQzREXUkaA5RC7RInQ4/yApschvWon68uFXEFHH1xsWzJnHOTj/pFlgyBwDzc7JAAxh1l4NXXCBS3ppHrsccaXytlW4CzzWDebcHSIjwWrFFzL6ZUVrV5InVmuiU5vQxg8IyVkZjh8q8eZxtRi0TyAyvgxPY328bGQO4E/C/bnrwOPcBxzgXzZ6vQYj0AHjlKpntvVEXj9AcpGTkVKLVSm+0oevTvH+0yLzwOBpJibADWbmKoVTGCVWrya3/E6D3YTiKzWzXWbDTTiAmCY0ks6Ph56oPDJzt/x5TcVBdE4BCuLKAhbWP3Er4nCQzlDoIjfWiVtlK1XERoqs7LfEAVcsQstr8XDoueWq8D5pUWdUepX81jSr8GQqWy8IyCxOmZHIDaZkBW5imVXTk="
+  app: thinkful-blog-api-challenge-jv
+  on:
+    repo: jbvance/thinkful-blog-api-challenge
